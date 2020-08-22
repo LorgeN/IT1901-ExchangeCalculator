@@ -1,5 +1,7 @@
 package org.tanberg.excalc;
 
+import javafx.scene.control.TextField;
+import javafx.scene.text.Text;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.testfx.framework.junit5.ApplicationTest;
@@ -25,12 +27,15 @@ public class AppTest extends ApplicationTest {
 
     @Test
     public void testController() {
-        Button clickMeButton = (Button) this.parent.lookup("#clickMeButton");
+        Button clickMeButton = (Button) this.parent.lookup("#okButton");
 
-        String oldText = clickMeButton.getText();
+        TextField inputField = (TextField) this.parent.lookup("#inputField");
+        inputField.setText("test");
 
         this.clickOn(clickMeButton);
 
-        Assertions.assertNotEquals(oldText, clickMeButton.getText());
+        Text displayText = (Text) this.parent.lookup("#displayText");
+
+        Assertions.assertEquals(displayText.getText(), "test");
     }
 }

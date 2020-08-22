@@ -1,4 +1,4 @@
-package javafxapp;
+package org.tanberg.excalc;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

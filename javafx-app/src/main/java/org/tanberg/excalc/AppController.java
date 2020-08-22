@@ -1,4 +1,4 @@
-package javafxapp;
+package org.tanberg.excalc;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;

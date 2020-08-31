@@ -6,6 +6,8 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -19,18 +21,22 @@ public class CurrencyExchange {
         this.currencies = new ConcurrentHashMap<>();
 
         Currency currency = new Currency("NOK", "Norske kroner", new CurrencyRate(LocalDate.now(), 1.0));
-        this.currencies.put(currency.getKey(), currency);
+        this.currencies.put(currency.getCode(), currency);
 
         InputStream stream = this.getClass().getResourceAsStream("rates.csv");
         this.importCSV(stream);
     }
 
-    public Currency getCurrency(String key) {
-        if (key == null || key.isBlank()) {
-            throw new IllegalArgumentException("Key can't be null or blank");
+    public Collection<Currency> getCurrencies() {
+        return Collections.unmodifiableCollection(this.currencies.values());
+    }
+
+    public Currency getCurrency(String code) {
+        if (code == null || code.isBlank()) {
+            throw new IllegalArgumentException("Code can't be null or blank");
         }
 
-        return this.currencies.get(key.toUpperCase());
+        return this.currencies.get(code.toUpperCase());
     }
 
     public void importCSV(InputStream in) {
@@ -39,22 +45,12 @@ public class CurrencyExchange {
 
             String line;
             while ((line = reader.readLine()) != null) {
-                try {
-                    this.importCSVCurrencyLine(line);
-                } catch (Throwable t) {
-                    t.printStackTrace();
-                }
+                this.importCSVCurrencyLine(line);
             }
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
-
-    /*
-    public double exchange(double amount, CurrencyExchange currency) {
-        return amount * (this.getExchangeRate() / currency.getExchangeRate());
-    }
-     */
 
     // Internals
 
@@ -62,7 +58,7 @@ public class CurrencyExchange {
         // We pretty much just assume here that it isn't malformed
         String[] split = line.split(";");
 
-        String key = split[0];
+        String code = split[0];
         String desc = split[1];
         CurrencyUnit unit = CurrencyUnit.fromIndex(Integer.parseInt(split[2]));
         LocalDate date = LocalDate.parse(split[3], FORMATTER);
@@ -70,10 +66,10 @@ public class CurrencyExchange {
 
         CurrencyRate rate = new CurrencyRate(date, value / unit.getMultiplier());
 
-        Currency currency = this.getCurrency(key);
+        Currency currency = this.getCurrency(code);
         if (currency == null) {
-            currency = new Currency(key.toUpperCase(), desc, rate);
-            this.currencies.put(currency.getKey(), currency);
+            currency = new Currency(code.toUpperCase(), desc, rate);
+            this.currencies.put(currency.getCode(), currency);
             return;
         }
 

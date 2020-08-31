@@ -6,18 +6,18 @@ import java.util.Objects;
 
 public class Currency {
 
-    private final String key;
+    private final String code;
     private final String description;
     private CurrencyRate[] rates;
 
-    public Currency(String key, String desc, CurrencyRate... rates) {
-        this.key = key;
+    public Currency(String code, String desc, CurrencyRate... rates) {
+        this.code = code;
         this.description = desc;
         this.rates = rates;
     }
 
-    public String getKey() {
-        return key;
+    public String getCode() {
+        return code;
     }
 
     public String getDescription() {
@@ -31,23 +31,36 @@ public class Currency {
     public void addRate(CurrencyRate rate) {
         LocalDate date = rate.getDate();
 
-        // Find last date that is before the currently given date
+        // Find first date that is before the currently given date
         int insertionIndex;
         for (insertionIndex = 0; insertionIndex < this.rates.length; insertionIndex++) {
             if (date.isAfter(this.rates[insertionIndex].getDate())) {
-                continue;
+                break;
             }
-
-            break;
         }
 
         this.rates = Arrays.copyOf(this.rates, this.rates.length + 1);
-        System.arraycopy(this.rates, insertionIndex - 1, this.rates, insertionIndex, this.rates.length - insertionIndex);
+        System.arraycopy(this.rates, insertionIndex, this.rates, insertionIndex + 1, this.rates.length - insertionIndex - 1);
         this.rates[insertionIndex] = rate;
+    }
+
+    public double getExchangeRate(LocalDate date) {
+        return Arrays.stream(this.rates)
+                .filter(rate -> rate.getDate().isEqual(date))
+                .mapToDouble(CurrencyRate::getValue)
+                .findAny().orElse(this.getExchangeRate());
     }
 
     public double getExchangeRate() {
         return this.rates[0].getValue();
+    }
+
+    public double exchangeTo(double amount, Currency other) {
+        return amount * (this.getExchangeRate() / other.getExchangeRate());
+    }
+
+    public double exchangeTo(double amount, LocalDate date, Currency other) {
+        return amount * (this.getExchangeRate(date) / other.getExchangeRate(date));
     }
 
     @Override
@@ -62,12 +75,12 @@ public class Currency {
 
         Currency currency = (Currency) o;
         return Double.compare(currency.getExchangeRate(), getExchangeRate()) == 0 &&
-                getKey().equals(currency.getKey()) &&
+                getCode().equals(currency.getCode()) &&
                 getDescription().equals(currency.getDescription());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getKey(), getDescription(), getExchangeRate());
+        return Objects.hash(getCode(), getDescription(), getExchangeRate());
     }
 }

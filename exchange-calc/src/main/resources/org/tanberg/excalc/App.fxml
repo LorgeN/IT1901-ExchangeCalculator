@@ -1,19 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.TextField?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Text?>
-<Pane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1"
-      fx:controller="org.tanberg.excalc.AppController">
-    <AnchorPane prefHeight="100.0" prefWidth="200.0">
-        <children>
-            <Button fx:id="okButton" onAction="#handleOkAction" text="Ok" AnchorPane.bottomAnchor="10.0"
-                    AnchorPane.rightAnchor="10.0"/>
-            <Text fx:id="displayText" layoutX="14.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" text="---"
-                  AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0"/>
-            <TextField fx:id="inputField" layoutX="26.0" layoutY="21.0" AnchorPane.leftAnchor="10.0"
-                       AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0"/>
-        </children>
+
+<Pane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.tanberg.excalc.AppController">
+    <AnchorPane prefHeight="400.0" prefWidth="507.0">
+      <children>
+         <LineChart fx:id="rateChart" layoutX="14.0" layoutY="14.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="130.0">
+           <xAxis>
+             <CategoryAxis side="BOTTOM" />
+           </xAxis>
+           <yAxis>
+             <NumberAxis side="LEFT" />
+           </yAxis>
+         </LineChart>
+         <ComboBox fx:id="fromComboBox" layoutX="129.0" layoutY="75.0" prefWidth="100.0" AnchorPane.leftAnchor="130.0" AnchorPane.topAnchor="30.0" />
+         <ComboBox fx:id="toComboBox" layoutX="272.0" layoutY="75.0" prefWidth="100.0" AnchorPane.rightAnchor="130.0" AnchorPane.topAnchor="30.0" />
+         <Text layoutX="246.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TIL" textAlignment="CENTER" textOrigin="TOP" AnchorPane.leftAnchor="246.0" AnchorPane.rightAnchor="246.12109375" AnchorPane.topAnchor="35.0" />
+         <TextField fx:id="inputField" layoutX="20.0" layoutY="28.0" prefHeight="25.0" prefWidth="100.0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="30.0" />
+         <Text fx:id="resultText" layoutX="421.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RESULT" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="70.0" />
+      </children>
     </AnchorPane>
 </Pane>

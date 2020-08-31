@@ -1,0 +1,241 @@
+BASE_CUR;Basisvaluta;UNIT_MULT;TIME_PERIOD;OBS_VALUE
+AUD;Australske dollar;0;24.08.2020;6.4536
+AUD;Australske dollar;0;25.08.2020;6.4162
+AUD;Australske dollar;0;26.08.2020;6.4506
+AUD;Australske dollar;0;27.08.2020;6.4562
+AUD;Australske dollar;0;28.08.2020;6.4566
+AUD;Australske dollar;0;31.08.2020;6.4481
+BGN;Bulgarske lev;2;24.08.2020;542.94
+BGN;Bulgarske lev;2;25.08.2020;540.38
+BGN;Bulgarske lev;2;26.08.2020;539.95
+BGN;Bulgarske lev;2;27.08.2020;537.77
+BGN;Bulgarske lev;2;28.08.2020;535.33
+BGN;Bulgarske lev;2;31.08.2020;534.56
+BRL;Brasilianske real;0;24.08.2020;1.6103
+BRL;Brasilianske real;0;25.08.2020;1.6047
+BRL;Brasilianske real;0;26.08.2020;1.6168
+BRL;Brasilianske real;0;27.08.2020;1.5934
+BRL;Brasilianske real;0;28.08.2020;1.5958
+BRL;Brasilianske real;0;31.08.2020;1.6149
+CAD;Kanadiske dollar;0;24.08.2020;6.8183
+CAD;Kanadiske dollar;0;25.08.2020;6.7762
+CAD;Kanadiske dollar;0;26.08.2020;6.7942
+CAD;Kanadiske dollar;0;27.08.2020;6.7765
+CAD;Kanadiske dollar;0;28.08.2020;6.7318
+CAD;Kanadiske dollar;0;31.08.2020;6.7015
+CHF;Sveitsiske franc;2;24.08.2020;986.79
+CHF;Sveitsiske franc;2;25.08.2020;982.96
+CHF;Sveitsiske franc;2;26.08.2020;983.45
+CHF;Sveitsiske franc;2;27.08.2020;978.4
+CHF;Sveitsiske franc;2;28.08.2020;973.23
+CHF;Sveitsiske franc;2;31.08.2020;970.39
+CNY;Kinesiske yuan;2;24.08.2020;129.66
+CNY;Kinesiske yuan;2;25.08.2020;129.41
+CNY;Kinesiske yuan;2;26.08.2020;129.95
+CNY;Kinesiske yuan;2;27.08.2020;129.33
+CNY;Kinesiske yuan;2;28.08.2020;128.07
+CNY;Kinesiske yuan;2;31.08.2020;127.95
+CZK;Tsjekkiske koruna;2;24.08.2020;40.699
+CZK;Tsjekkiske koruna;2;25.08.2020;40.461
+CZK;Tsjekkiske koruna;2;26.08.2020;40.211
+CZK;Tsjekkiske koruna;2;27.08.2020;40.028
+CZK;Tsjekkiske koruna;2;28.08.2020;39.962
+CZK;Tsjekkiske koruna;2;31.08.2020;39.892
+DKK;Danske kroner;2;24.08.2020;142.66
+DKK;Danske kroner;2;25.08.2020;142.01
+DKK;Danske kroner;2;26.08.2020;141.87
+DKK;Danske kroner;2;27.08.2020;141.31
+DKK;Danske kroner;2;28.08.2020;140.65
+DKK;Danske kroner;2;31.08.2020;140.45
+EUR;Euro;0;24.08.2020;10.6188
+EUR;Euro;0;25.08.2020;10.5688
+EUR;Euro;0;26.08.2020;10.5603
+EUR;Euro;0;27.08.2020;10.5178
+EUR;Euro;0;28.08.2020;10.47
+EUR;Euro;0;31.08.2020;10.455
+GBP;Britiske pund;0;24.08.2020;11.7758
+GBP;Britiske pund;0;25.08.2020;11.7503
+GBP;Britiske pund;0;26.08.2020;11.7742
+GBP;Britiske pund;0;27.08.2020;11.7511
+GBP;Britiske pund;0;28.08.2020;11.7025
+GBP;Britiske pund;0;31.08.2020;11.6679
+HKD;Hong Kong dollar;0;24.08.2020;1.1565
+HKD;Hong Kong dollar;0;25.08.2020;1.1543
+HKD;Hong Kong dollar;0;26.08.2020;1.1558
+HKD;Hong Kong dollar;0;27.08.2020;1.1495
+HKD;Hong Kong dollar;0;28.08.2020;1.1338
+HKD;Hong Kong dollar;0;31.08.2020;1.1298
+HRK;Kroatiske kuna;2;24.08.2020;140.96
+HRK;Kroatiske kuna;2;25.08.2020;140.37
+HRK;Kroatiske kuna;2;26.08.2020;140.29
+HRK;Kroatiske kuna;2;27.08.2020;139.75
+HRK;Kroatiske kuna;2;28.08.2020;139.09
+HRK;Kroatiske kuna;2;31.08.2020;138.88
+HUF;Ungarske forinter;2;24.08.2020;3.0268
+HUF;Ungarske forinter;2;25.08.2020;2.9901
+HUF;Ungarske forinter;2;26.08.2020;2.9769
+HUF;Ungarske forinter;2;27.08.2020;2.9546
+HUF;Ungarske forinter;2;28.08.2020;2.9478
+HUF;Ungarske forinter;2;31.08.2020;2.9489
+I44;Importveid kursindeks;0;24.08.2020;112.18
+I44;Importveid kursindeks;0;25.08.2020;111.76
+I44;Importveid kursindeks;0;26.08.2020;111.79
+I44;Importveid kursindeks;0;27.08.2020;111.37
+I44;Importveid kursindeks;0;28.08.2020;110.76
+I44;Importveid kursindeks;0;31.08.2020;110.51
+IDR;Indonesiske rupiah;2;24.08.2020;0.061097
+IDR;Indonesiske rupiah;2;25.08.2020;0.061086
+IDR;Indonesiske rupiah;2;26.08.2020;0.061051
+IDR;Indonesiske rupiah;2;27.08.2020;0.060516
+IDR;Indonesiske rupiah;2;28.08.2020;0.060413
+IDR;Indonesiske rupiah;2;31.08.2020;0.060071
+ILS;Ny israelsk shekel;0;24.08.2020;2.6354
+ILS;Ny israelsk shekel;0;25.08.2020;2.6299
+ILS;Ny israelsk shekel;0;26.08.2020;2.6339
+ILS;Ny israelsk shekel;0;27.08.2020;2.6441
+ILS;Ny israelsk shekel;0;28.08.2020;2.6121
+ILS;Ny israelsk shekel;0;31.08.2020;2.6052
+INR;Indiske rupi;2;24.08.2020;12.098
+INR;Indiske rupi;2;25.08.2020;12.049
+INR;Indiske rupi;2;26.08.2020;12.053
+INR;Indiske rupi;2;27.08.2020;12.053
+INR;Indiske rupi;2;28.08.2020;12.005
+INR;Indiske rupi;2;31.08.2020;11.953
+JPY;Japanske yen;2;24.08.2020;8.4774
+JPY;Japanske yen;2;25.08.2020;8.41
+JPY;Japanske yen;2;26.08.2020;8.4253
+JPY;Japanske yen;2;27.08.2020;8.3914
+JPY;Japanske yen;2;28.08.2020;8.3499
+JPY;Japanske yen;2;31.08.2020;8.2668
+KRW;Sørkoreanske won;2;24.08.2020;0.7551
+KRW;Sørkoreanske won;2;25.08.2020;0.7538
+KRW;Sørkoreanske won;2;26.08.2020;0.7549
+KRW;Sørkoreanske won;2;27.08.2020;0.7514
+KRW;Sørkoreanske won;2;28.08.2020;0.744
+KRW;Sørkoreanske won;2;31.08.2020;0.7385
+MXN;Meksikanske peso;2;24.08.2020;40.95
+MXN;Meksikanske peso;2;25.08.2020;40.84
+MXN;Meksikanske peso;2;26.08.2020;40.81
+MXN;Meksikanske peso;2;27.08.2020;40.58
+MXN;Meksikanske peso;2;28.08.2020;40.16
+MXN;Meksikanske peso;2;31.08.2020;40.12
+MYR;Malaysiske ringgit;0;24.08.2020;2.1466
+MYR;Malaysiske ringgit;0;25.08.2020;2.1461
+MYR;Malaysiske ringgit;0;26.08.2020;2.1481
+MYR;Malaysiske ringgit;0;27.08.2020;2.1351
+MYR;Malaysiske ringgit;0;28.08.2020;2.1095
+MYR;Malaysiske ringgit;0;31.08.2020;2.1021
+NZD;New Zealand dollar;0;24.08.2020;5.8801
+NZD;New Zealand dollar;0;25.08.2020;5.8449
+NZD;New Zealand dollar;0;26.08.2020;5.8763
+NZD;New Zealand dollar;0;27.08.2020;5.9092
+NZD;New Zealand dollar;0;28.08.2020;5.9076
+NZD;New Zealand dollar;0;31.08.2020;5.8975
+PHP;Filippinske peso;2;24.08.2020;18.485
+PHP;Filippinske peso;2;25.08.2020;18.426
+PHP;Filippinske peso;2;26.08.2020;18.441
+PHP;Filippinske peso;2;27.08.2020;18.329
+PHP;Filippinske peso;2;28.08.2020;18.153
+PHP;Filippinske peso;2;31.08.2020;18.077
+PKR;Pakistanske rupi;2;24.08.2020;5.323
+PKR;Pakistanske rupi;2;25.08.2020;5.309
+PKR;Pakistanske rupi;2;26.08.2020;5.316
+PKR;Pakistanske rupi;2;27.08.2020;5.324
+PKR;Pakistanske rupi;2;28.08.2020;5.25
+PKR;Pakistanske rupi;2;31.08.2020;5.291
+PLN;Polske zloty;0;24.08.2020;2.4141
+PLN;Polske zloty;0;25.08.2020;2.4064
+PLN;Polske zloty;0;26.08.2020;2.396
+PLN;Polske zloty;0;27.08.2020;2.3908
+PLN;Polske zloty;0;28.08.2020;2.3838
+PLN;Polske zloty;0;31.08.2020;2.3777
+RON;Ny rumenske leu;2;24.08.2020;219.4
+RON;Ny rumenske leu;2;25.08.2020;218.35
+RON;Ny rumenske leu;2;26.08.2020;218.1
+RON;Ny rumenske leu;2;27.08.2020;217.24
+RON;Ny rumenske leu;2;28.08.2020;216.34
+RON;Ny rumenske leu;2;31.08.2020;216.02
+RUB;Russiske rubler;2;24.08.2020;12.067
+RUB;Russiske rubler;2;25.08.2020;11.961
+RUB;Russiske rubler;2;26.08.2020;11.818
+RUB;Russiske rubler;2;27.08.2020;11.866
+RUB;Russiske rubler;2;28.08.2020;11.814
+RUB;Russiske rubler;2;31.08.2020;11.84
+SEK;Svenske kroner;2;24.08.2020;102.41
+SEK;Svenske kroner;2;25.08.2020;102.09
+SEK;Svenske kroner;2;26.08.2020;102.18
+SEK;Svenske kroner;2;27.08.2020;101.98
+SEK;Svenske kroner;2;28.08.2020;102.04
+SEK;Svenske kroner;2;31.08.2020;101.62
+SGD;Singapore dollar;0;24.08.2020;6.5536
+SGD;Singapore dollar;0;25.08.2020;6.5361
+SGD;Singapore dollar;0;26.08.2020;6.547
+SGD;Singapore dollar;0;27.08.2020;6.5215
+SGD;Singapore dollar;0;28.08.2020;6.465
+SGD;Singapore dollar;0;31.08.2020;6.4398
+THB;Thailandske baht;2;24.08.2020;28.537
+THB;Thailandske baht;2;25.08.2020;28.422
+THB;Thailandske baht;2;26.08.2020;28.582
+THB;Thailandske baht;2;27.08.2020;28.527
+THB;Thailandske baht;2;28.08.2020;28.228
+THB;Thailandske baht;2;31.08.2020;28.182
+TRY;Tyrkiske lira;2;24.08.2020;121.62
+TRY;Tyrkiske lira;2;25.08.2020;120.99
+TRY;Tyrkiske lira;2;26.08.2020;121.79
+TRY;Tyrkiske lira;2;27.08.2020;121.36
+TRY;Tyrkiske lira;2;28.08.2020;120.1
+TRY;Tyrkiske lira;2;31.08.2020;119.12
+TWD;Nye taiwanske dollar;2;24.08.2020;30.489
+TWD;Nye taiwanske dollar;2;25.08.2020;30.443
+TWD;Nye taiwanske dollar;2;26.08.2020;30.49
+TWD;Nye taiwanske dollar;2;27.08.2020;30.337
+TWD;Nye taiwanske dollar;2;28.08.2020;29.935
+TWD;Nye taiwanske dollar;2;31.08.2020;29.809
+TWI;Industriens effektive valutakurs;0;24.08.2020;123.95
+TWI;Industriens effektive valutakurs;0;25.08.2020;123.48
+TWI;Industriens effektive valutakurs;0;26.08.2020;123.5
+TWI;Industriens effektive valutakurs;0;27.08.2020;123.06
+TWI;Industriens effektive valutakurs;0;28.08.2020;122.5
+TWI;Industriens effektive valutakurs;0;31.08.2020;122.17
+USD;Amerikanske dollar;0;24.08.2020;8.9633
+USD;Amerikanske dollar;0;25.08.2020;8.946
+USD;Amerikanske dollar;0;26.08.2020;8.9578
+USD;Amerikanske dollar;0;27.08.2020;8.9089
+USD;Amerikanske dollar;0;28.08.2020;8.7872
+USD;Amerikanske dollar;0;31.08.2020;8.7563
+XDR;IMF Spesielle trekkrettigheter;0;24.08.2020;12.74139
+XDR;IMF Spesielle trekkrettigheter;0;25.08.2020;12.69701
+XDR;IMF Spesielle trekkrettigheter;0;26.08.2020;12.70566
+XDR;IMF Spesielle trekkrettigheter;0;27.08.2020;12.64864
+XDR;IMF Spesielle trekkrettigheter;0;28.08.2020;12.53788
+XDR;IMF Spesielle trekkrettigheter;0;31.08.2020;12.49688
+ZAR;Sørafrikanske rand;0;24.08.2020;0.5293
+ZAR;Sørafrikanske rand;0;25.08.2020;0.5336
+ZAR;Sørafrikanske rand;0;26.08.2020;0.5334
+ZAR;Sørafrikanske rand;0;27.08.2020;0.5252
+ZAR;Sørafrikanske rand;0;28.08.2020;0.5266
+ZAR;Sørafrikanske rand;0;31.08.2020;0.5238
+BYN;Nye hviterussiske rubler;0;24.08.2020;3.52
+BYN;Nye hviterussiske rubler;0;25.08.2020;3.4037
+BYN;Nye hviterussiske rubler;0;26.08.2020;3.3609
+BYN;Nye hviterussiske rubler;0;27.08.2020;3.3353
+BYN;Nye hviterussiske rubler;0;28.08.2020;3.2997
+BYN;Nye hviterussiske rubler;0;31.08.2020;3.292
+BDT;Bangladeshi taka;2;24.08.2020;10.57
+BDT;Bangladeshi taka;2;25.08.2020;10.56
+BDT;Bangladeshi taka;2;26.08.2020;10.57
+BDT;Bangladeshi taka;2;27.08.2020;10.51
+BDT;Bangladeshi taka;2;28.08.2020;10.36
+BDT;Bangladeshi taka;2;31.08.2020;10.33
+MMK;Myanmar kyat;2;24.08.2020;0.6603
+MMK;Myanmar kyat;2;25.08.2020;0.6614
+MMK;Myanmar kyat;2;26.08.2020;0.6638
+MMK;Myanmar kyat;2;27.08.2020;0.6656
+MMK;Myanmar kyat;2;28.08.2020;0.655
+MMK;Myanmar kyat;2;31.08.2020;0.6594
+ISK;Islandske kroner;2;24.08.2020;6.51
+ISK;Islandske kroner;2;25.08.2020;6.48
+ISK;Islandske kroner;2;26.08.2020;6.47
+ISK;Islandske kroner;2;27.08.2020;6.43
+ISK;Islandske kroner;2;28.08.2020;6.4
+ISK;Islandske kroner;2;31.08.2020;6.36

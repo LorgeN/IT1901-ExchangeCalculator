@@ -3,6 +3,7 @@ package org.tanberg.excalc;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.chart.LineChart;
+import javafx.scene.chart.NumberAxis;
 import javafx.scene.chart.XYChart;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextField;
@@ -20,7 +21,7 @@ public class AppController {
 
     private static final DecimalFormat FORMAT = new DecimalFormat("0.00");
     private static final String DEFAULT_RESULT = "= ?";
-    private static final LocalDate STAT_CUT_OFF = LocalDate.of(2020, 6, 1);
+    private static final LocalDate STAT_CUT_OFF = LocalDate.of(2020, 1, 1);
 
     @FXML
     public LineChart<String, Number> rateChart;
@@ -73,7 +74,11 @@ public class AppController {
         this.resultText.setText(DEFAULT_RESULT);
 
         this.inputField.textProperty().addListener((observable, oldValue, newValue) -> {
-            if (!newValue.matches("\\d*")) {
+            try {
+                if (!newValue.isBlank()) {
+                    Double.parseDouble(newValue);
+                }
+            } catch (NumberFormatException e) {
                 this.inputField.setText(oldValue);
                 return;
             }
@@ -158,15 +163,32 @@ public class AppController {
         XYChart.Series<String, Number> series = new XYChart.Series<>();
         series.setName("Kurs");
 
-        for (CurrencyRate rate : from.getRates()) {
+        CurrencyRate[] rates = from.getRates();
+
+        double lowVal = 0;
+        double highVal = 0;
+
+        // Subtract 7 for weekly (ish)
+        for (int i = rates.length - 1; i >= 0; i -= 7) {
+            CurrencyRate rate = rates[i];
             LocalDate date = rate.getDate();
             if (date.isBefore(STAT_CUT_OFF)) {
                 continue;
             }
 
             double value = from.exchangeTo(1.0, date, to);
+            lowVal = lowVal == 0 ? value : Math.min(value, lowVal);
+            highVal = highVal == 0 ? value : Math.max(value, highVal);
+
             series.getData().add(new XYChart.Data<>(date.toString(), value));
         }
+
+
+        NumberAxis yAxis = (NumberAxis) this.rateChart.getYAxis();
+        yAxis.setAutoRanging(false);
+        yAxis.setUpperBound(Math.ceil(highVal));
+        yAxis.setLowerBound(Math.floor(lowVal));
+        yAxis.setTickUnit(0.5);
 
         this.rateChart.getData().clear();
         this.rateChart.getData().add(series);

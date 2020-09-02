@@ -1,4 +1,4 @@
-package org.tanberg.excalc;
+package valutakalkulator;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;

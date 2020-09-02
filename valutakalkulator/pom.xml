@@ -84,7 +84,7 @@
                 <artifactId>javafx-maven-plugin</artifactId>
                 <version>0.0.4</version>
                 <configuration>
-                    <mainClass>org.tanberg.excalc.App</mainClass>
+                    <mainClass>valutakalkulator.App</mainClass>
                 </configuration>
             </plugin>
         </plugins>

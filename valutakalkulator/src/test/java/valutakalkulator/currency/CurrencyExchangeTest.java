@@ -1,4 +1,4 @@
-package org.tanberg.excalc.currency;
+package valutakalkulator.currency;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

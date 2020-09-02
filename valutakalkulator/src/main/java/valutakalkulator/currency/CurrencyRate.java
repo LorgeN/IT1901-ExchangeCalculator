@@ -1,4 +1,4 @@
-package org.tanberg.excalc.currency;
+package valutakalkulator.currency;
 
 import java.time.LocalDate;
 import java.util.Objects;

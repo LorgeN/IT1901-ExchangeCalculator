@@ -1,8 +1,8 @@
-package org.tanberg.excalc;
+package valutakalkulator;
 
 import javafx.util.StringConverter;
-import org.tanberg.excalc.currency.Currency;
-import org.tanberg.excalc.currency.CurrencyExchange;
+import valutakalkulator.currency.Currency;
+import valutakalkulator.currency.CurrencyExchange;
 
 public class CurrencyStringConverter extends StringConverter<Currency> {
 

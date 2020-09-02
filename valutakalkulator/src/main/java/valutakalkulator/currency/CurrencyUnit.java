@@ -1,4 +1,4 @@
-package org.tanberg.excalc.currency;
+package valutakalkulator.currency;
 
 public enum CurrencyUnit {
     SINGLE(1),

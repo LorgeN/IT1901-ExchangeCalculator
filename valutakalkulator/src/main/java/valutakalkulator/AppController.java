@@ -1,4 +1,4 @@
-package org.tanberg.excalc;
+package valutakalkulator;
 
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -8,9 +8,9 @@ import javafx.scene.chart.XYChart;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
-import org.tanberg.excalc.currency.Currency;
-import org.tanberg.excalc.currency.CurrencyExchange;
-import org.tanberg.excalc.currency.CurrencyRate;
+import valutakalkulator.currency.Currency;
+import valutakalkulator.currency.CurrencyExchange;
+import valutakalkulator.currency.CurrencyRate;
 
 import java.text.DecimalFormat;
 import java.time.LocalDate;
